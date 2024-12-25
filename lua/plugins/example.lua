@@ -1,6 +1,19 @@
 -- since this is just an example spec, don't actually load anything here and return an empty spec
 -- stylua: ignore
-if true then return {} end
+if true then return {
+  { "loctvl842/monokai-pro.nvim" },
+
+  -- Configure LazyVim to load gruvbox
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "monokai-pro",
+    },
+  },
+} end
+if true then
+  return {}
+end
 
 -- every spec file under the "plugins" directory will be loaded automatically by lazy.nvim
 --
@@ -12,11 +25,13 @@ return {
   -- add gruvbox
   { "ellisonleao/gruvbox.nvim" },
 
+  { "loctvl842/monokai-pro.nvim" },
+
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "monokai-pro",
     },
   },
 
