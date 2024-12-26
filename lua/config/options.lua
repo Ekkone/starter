@@ -3,3 +3,4 @@
 -- Add any additional options herlua0
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
+vim.b.autoformat = false
